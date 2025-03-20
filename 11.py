@@ -22,3 +22,12 @@ def test01():
     print(data1[1]>5)
 
     print(data1[:,data1[1]>5])
+
+
+def test02():
+    data2 = torch.randint(0,10,[3,4,5])
+    print("data2-->",data2)
+    print(data2[0, :, :])
+    print(data2[0, :, :])
+    print(data2[0, :, :])
+test02()
