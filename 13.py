@@ -1,5 +1,5 @@
 import numpy as np
-import  torch
+import torch
 def test():
     data = torch.tensor(np.random.randint(0,10,[1,3,1,5]))
     print("data-->",data)
