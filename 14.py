@@ -14,8 +14,8 @@ def test():
     print("new_data-->", new_data)
     print("new_data shape-->", new_data.size())
 
-    new_data = torch.transpose(data, [1, 2, 0])
+    new_data = torch.permute(data, [1, 2, 0] )
     print("new_data-->", new_data)
     print("new_data shape-->", new_data.size())
-    if __name__ == '__main__':
-        test()
+
+test()
