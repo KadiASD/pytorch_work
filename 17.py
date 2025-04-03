@@ -36,6 +36,19 @@ def test03():
     print("x2.grad-->", x2.grad)
 
 
+def test04():
+    x1 = torch.tensor([10, 20], requires_grad=True, dtype=torch.float64)
+    x2 = torch.tensor([30, 40], requires_grad=True, dtype=torch.float64)
+    y = x1 ** 2 + x2 ** 2 + x1 * x2
+    print("y-->", y)
+    y = y.sum()
+    print("y.sum()-->", y.sum())
+    y.backward()
+    print("x1.grad-->", x1.grad)
+    print("x2.grad-->", x2.grad)
+
+
 test01()
 test02()
 test03()
+test04()
