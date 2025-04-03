@@ -13,12 +13,21 @@ def test():
     print(data.sum())
     print(data.sum(dim=0))
     print(data.sum(dim=1))
-    print('-'*50)
-
+    print('-' * 50)
 
     print(data.pow(exponent=2))
-    print('-'*50)
-
+    print('-' * 50)
 
     print(data.sqrt())
-    print('-'*50)
+    print('-' * 50)
+
+    print(data.exp())
+    print('-' * 50)
+
+    print(data.log())
+    print(data.log2())
+    print(data.log10())
+
+
+if __name__ == '__main__':
+    test()
