@@ -48,7 +48,26 @@ def test04():
     print("x2.grad-->", x2.grad)
 
 
+'''
+计算过程
+'''
+
+
+def test05():
+    x = torch.ones(2, 2, requires_grad=True)
+    print("x-->", x)
+    y = x + 2
+    print("y-->", y)
+    z = y * y * 3
+    print("z-->", z, z.shape)
+    out = z.mean()
+    print("out-->", out, out.shape)
+    out.backward()
+    print("x.grad-->", x.grad)
+
+
 test01()
 test02()
 test03()
 test04()
+test05()
